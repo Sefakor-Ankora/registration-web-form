@@ -1,0 +1,31 @@
+.side-bar {
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: sticky;
+  top: 45px;
+  background-color: var(--bs-light);
+  border-radius: 15px;
+}
+
+.side-bar::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #f5f5f5;
+  visibility: hidden;
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+  background-color: var(--bs-primary);
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+/* Show the scrollbar on hover */
+.side-bar:hover::-webkit-scrollbar {
+  visibility: visible;
+}
+
+.side-bar:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
