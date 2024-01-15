@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import EventPage from './pages/Event';
 import VerifyRegistration from './pages/Verify';
+import MiniEventPage from './pages/Event/minified';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/events/:slug" element={<EventPage />} />
+            <Route
+              path="/events/registrations/:slug"
+              element={<MiniEventPage />}
+            />
             <Route path="/verify" element={<VerifyRegistration />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

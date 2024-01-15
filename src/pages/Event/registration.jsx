@@ -33,7 +33,7 @@ export default function RegistrationForm({ eventId }) {
     api
       .post(`/events/${eventId}/registrations`, {
         ...formData,
-        callback_url: `${window.location.host}/verify`,
+        callback_url: `https://eventsregistration.wacren.net/verify`,
       })
       .then((response) => {
         setRegistrationRequired(false);
